@@ -3,112 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site educativo sobre computação em nuvem, seus modelos, vantagens e exemplos.">
-  <title>Computação em Nuvem | Interfaces Web</title>
+  <title>Computação em Nuvem</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topo">
-    <nav class="nav container">
-      <a class="logo" href="#inicio">Cloud<span>Tech</span></a>
-      <button class="menu" aria-label="Abrir menu">☰</button>
-      <div class="links">
-        <a href="#inicio">Início</a>
-        <a href="#conceito">O que é?</a>
-        <a href="#modelos">Modelos</a>
-        <a href="#vantagens">Vantagens</a>
-        <a href="#exemplos">Exemplos</a>
-        <a href="sobre.html">Sobre</a>
-      </div>
-    </nav>
-  </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#inicio">CloudTech</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conceito">O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#vantagens">Vantagens</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="tag">TECNOLOGIA • INTERNET • INOVAÇÃO</p>
-          <h1>Computação em <span>Nuvem</span></h1>
-          <p class="lead">Entenda como dados, aplicativos e serviços podem ser acessados pela internet, sem depender apenas do computador local.</p>
-          <a class="btn" href="#conceito">Começar a aprender</a>
-        </div>
-        <div class="cloud-art" aria-hidden="true"><div class="server">SERVIDORES<br><br>ARMAZENAMENTO<br><br>DADOS</div></div>
-      </div>
-    </section>
+<header id="inicio" class="bg-primary text-white py-5">
+  <div class="container py-5 text-center">
+    <p class="text-uppercase fw-bold">Projeto de Interfaces Web</p>
+    <h1 class="display-2 fw-bold">Computação em Nuvem</h1>
+    <p class="lead mx-auto" style="max-width:700px">Entenda como dados, aplicativos e serviços podem ser acessados pela internet.</p>
+    <a href="#conceito" class="btn btn-light btn-lg mt-3">Começar</a>
+  </div>
+</header>
 
-    <section id="conceito" class="section">
-      <div class="container">
-        <p class="eyebrow">01 — CONCEITO</p>
-        <h2>O que é computação em nuvem?</h2>
-        <div class="content-grid">
-          <div>
-            <p>Computação em nuvem é o uso de recursos de tecnologia pela internet. Em vez de manter todos os arquivos, programas e servidores em um único computador, empresas e usuários podem utilizar infraestrutura disponibilizada por provedores de nuvem.</p>
-            <p>Isso permite armazenar arquivos, executar aplicações, criar bancos de dados e processar informações de diferentes lugares, usando dispositivos conectados à internet.</p>
-          </div>
-          <div class="info-box"><strong>Em resumo</strong><p>Você utiliza recursos de computação quando precisa deles, pela internet, com capacidade que pode ser aumentada ou reduzida conforme a necessidade.</p></div>
-        </div>
-      </div>
-    </section>
+<section id="conceito" class="py-5">
+  <div class="container py-4">
+    <h2 class="fw-bold mb-4">O que é computação em nuvem?</h2>
+    <div class="row g-4">
+      <div class="col-md-8"><p>Computação em nuvem é o uso de recursos de tecnologia pela internet. Em vez de manter todos os arquivos, programas e servidores em um único computador, usuários e empresas podem utilizar recursos disponibilizados por provedores de nuvem.</p><p>Com a nuvem, é possível armazenar arquivos, executar aplicações, criar bancos de dados e processar informações usando dispositivos conectados à internet.</p></div>
+      <div class="col-md-4"><div class="alert alert-primary h-100"><h5>Em resumo</h5><p class="mb-0">A nuvem permite utilizar recursos de computação pela internet conforme a necessidade.</p></div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="modelos" class="section alt">
-      <div class="container">
-        <p class="eyebrow">02 — MODELOS</p>
-        <h2>Principais modelos de nuvem</h2>
-        <div class="cards">
-          <article class="card"><div class="icon">01</div><h3>Nuvem pública</h3><p>Recursos são oferecidos por um provedor e compartilhados entre diferentes clientes.</p></article>
-          <article class="card"><div class="icon">02</div><h3>Nuvem privada</h3><p>Infraestrutura dedicada a uma organização, permitindo maior controle sobre recursos e configurações.</p></article>
-          <article class="card"><div class="icon">03</div><h3>Nuvem híbrida</h3><p>Combina ambientes públicos e privados, permitindo escolher onde cada aplicação ou dado será utilizado.</p></article>
-        </div>
-        <h3 class="subtitulo">Modelos de serviço</h3>
-        <div class="service-grid">
-          <div><b>IaaS</b><span>Infraestrutura como serviço: servidores, armazenamento e redes.</span></div>
-          <div><b>PaaS</b><span>Plataforma como serviço: ambiente para desenvolver e executar aplicações.</span></div>
-          <div><b>SaaS</b><span>Software como serviço: aplicativos prontos acessados pela internet.</span></div>
-        </div>
-      </div>
-    </section>
+<section id="modelos" class="bg-light py-5">
+  <div class="container py-4">
+    <h2 class="fw-bold mb-4">Principais modelos de nuvem</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h3 class="h4">Nuvem pública</h3><p>Recursos oferecidos por um provedor e compartilhados entre diferentes clientes.</p></div></div></div>
+      <div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h3 class="h4">Nuvem privada</h3><p>Infraestrutura dedicada a uma organização, com maior controle sobre recursos e configurações.</p></div></div></div>
+      <div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h3 class="h4">Nuvem híbrida</h3><p>Combinação de ambientes públicos e privados para diferentes necessidades.</p></div></div></div>
+    </div>
+    <h3 class="mt-5 mb-3">Modelos de serviço</h3>
+    <div class="row g-3">
+      <div class="col-md-4"><div class="p-4 bg-white border rounded"><h4>IaaS</h4><p class="mb-0">Infraestrutura como serviço: servidores, armazenamento e redes.</p></div></div>
+      <div class="col-md-4"><div class="p-4 bg-white border rounded"><h4>PaaS</h4><p class="mb-0">Plataforma como serviço para desenvolver e executar aplicações.</p></div></div>
+      <div class="col-md-4"><div class="p-4 bg-white border rounded"><h4>SaaS</h4><p class="mb-0">Software como serviço: aplicativos prontos pela internet.</p></div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="vantagens" class="section">
-      <div class="container">
-        <p class="eyebrow">03 — BENEFÍCIOS</p>
-        <h2>Por que usar a nuvem?</h2>
-        <div class="benefits">
-          <div><span>01</span><h3>Escalabilidade</h3><p>A capacidade pode crescer ou diminuir de acordo com a demanda.</p></div>
-          <div><span>02</span><h3>Economia</h3><p>É possível reduzir investimentos em parte da infraestrutura física.</p></div>
-          <div><span>03</span><h3>Acesso remoto</h3><p>Serviços e arquivos podem ser acessados de diferentes locais.</p></div>
-          <div><span>04</span><h3>Flexibilidade</h3><p>Recursos podem ser ajustados conforme as necessidades do projeto.</p></div>
-        </div>
-      </div>
-    </section>
+<section id="vantagens" class="py-5">
+  <div class="container py-4">
+    <h2 class="fw-bold mb-4">Vantagens da computação em nuvem</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="card h-100 text-center"><div class="card-body"><h3 class="h5">Escalabilidade</h3><p>Recursos podem aumentar ou diminuir conforme a demanda.</p></div></div></div>
+      <div class="col-md-3"><div class="card h-100 text-center"><div class="card-body"><h3 class="h5">Economia</h3><p>Redução de investimentos em parte da infraestrutura física.</p></div></div></div>
+      <div class="col-md-3"><div class="card h-100 text-center"><div class="card-body"><h3 class="h5">Acesso remoto</h3><p>Arquivos e serviços podem ser acessados de diferentes locais.</p></div></div></div>
+      <div class="col-md-3"><div class="card h-100 text-center"><div class="card-body"><h3 class="h5">Flexibilidade</h3><p>Recursos podem ser ajustados conforme o projeto.</p></div></div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="exemplos" class="section alt">
-      <div class="container">
-        <p class="eyebrow">04 — NO DIA A DIA</p>
-        <h2>Exemplos de serviços em nuvem</h2>
-        <div class="examples">
-          <div><b>Armazenamento</b><p>Guardar fotos, documentos e arquivos online.</p></div>
-          <div><b>E-mail</b><p>Enviar e receber mensagens usando servidores na nuvem.</p></div>
-          <div><b>Streaming</b><p>Assistir a vídeos e ouvir músicas pela internet.</p></div>
-          <div><b>Desenvolvimento</b><p>Criar, testar e publicar aplicações usando infraestrutura online.</p></div>
-        </div>
-      </div>
-    </section>
+<section class="bg-dark text-white py-5">
+  <div class="container text-center py-4">
+    <h2>Teste seus conhecimentos</h2>
+    <p>Qual modelo oferece um software pronto para o usuário?</p>
+    <button class="btn btn-outline-light m-1" onclick="responder(false)">IaaS</button>
+    <button class="btn btn-outline-light m-1" onclick="responder(false)">PaaS</button>
+    <button class="btn btn-light m-1" onclick="responder(true)">SaaS</button>
+    <p id="resultado" class="fw-bold mt-3"></p>
+  </div>
+</section>
 
-    <section class="quiz section">
-      <div class="container quiz-box">
-        <p class="eyebrow">TESTE SEUS CONHECIMENTOS</p>
-        <h2>Qual modelo oferece um software pronto para o usuário?</h2>
-        <div class="answers">
-          <button data-answer="errada">IaaS</button>
-          <button data-answer="errada">PaaS</button>
-          <button data-answer="certa">SaaS</button>
-        </div>
-        <p id="resultado" class="resultado"></p>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="container"><p>CloudTech — Projeto educacional de Interfaces Web</p><p>Desenvolvido por Carlos Eduardo Félix e Conrado Gazano — Turma 1º D</p></div></footer>
-  <script src="script.js"></script>
+<footer class="bg-black text-white text-center py-4"><p class="mb-1">CloudTech — Projeto de Interfaces Web</p><p class="mb-0">Carlos Eduardo Félix e Conrado Gazano — Turma 1º D</p></footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
