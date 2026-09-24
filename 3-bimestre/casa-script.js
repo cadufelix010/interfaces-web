@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const f=document.getElementById("formCasa");if(f){f.addEventListener("submit",e=>{e.preventDefault();alert("Mensagem enviada! Este formulário é demonstrativo.");f.reset();});}});
